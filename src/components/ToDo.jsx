@@ -43,19 +43,19 @@ class ToDo extends BaseComponent {
 
   async render() {
     return (
-      <div className="ToDo">
-        <img className="Logo" src={Logo.default} alt="@nyaf logo" />
-        <h1 className="ToDo-Header">@nyaf To Do</h1>
-        <div className="ToDo-Container">
-          <div className="ToDo-Content">
+      <div class="ToDo">
+        <img classN="Logo" src={Logo.default} alt="@nyaf logo" />
+        <h1 class="ToDo-Header">@nyaf To Do</h1>
+        <div class="ToDo-Container">
+          <div class="ToDo-Content">
             {this.data.list.map((item) => {
               return <app-todo-item item={item} />;
             })}
           </div>
 
-          <div className="ToDoInput">
+          <div class="ToDoInput">
             <input type="text" placeholder="Enter a todo..." value={this.toDo} n-on-input={(e) => this.handleInput(e)} n-on-keypress={(e) => this.handleKeyPress(e)} />
-            <button className="ToDo-Add" n-on-click={(e) => this.createNewToDoItem()}>
+            <button class="ToDo-Add" n-on-click={(e) => this.createNewToDoItem()}>
               +
           </button>
           </div>
